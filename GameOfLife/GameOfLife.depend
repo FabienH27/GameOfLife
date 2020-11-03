@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1603710470 source:c:\users\fhann\documents\iut\semestre_3\algorithmique\jeuvie\gameoflife\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+
