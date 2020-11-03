@@ -29,13 +29,11 @@ void Init_Tab(int **tab, int x, int y){
 }
 
 void Affiche_Tab(int **tab,int nb){
-    system("cls");
     for(int i = 1;i < nb-1;i++){
         for(int j = 1;j < nb-1;j++){
             cout << tab[i][j] << "\t";
         }cout << endl;
     }
-
 }
 
 int Test_NbVoisins(int **tab, int i, int j){
@@ -82,6 +80,7 @@ void Jeu(int **tab,int **tabVoisins, int nb,int nbRepetition){
         tabVoisins = Generate_NbVoisinsTab(tab,nb,nb);
 
         NextGeneration(tab,tabVoisins,nb,nb);
+        cout << "\n" << i+1 << "eme generation : " << endl;
         Affiche_Tab(tab,nb);
     }
 
